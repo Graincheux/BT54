@@ -7,32 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!--link rel="stylesheet" href="sass/custom.scss"-->
-    <title>Variant A - Hello, world!</title>
+    <!--link href="/css/custom.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Variant B - Hello, world!</title>
   </head>
-  <body>
+  <body class="bg-body-tertiary">
     <div class="container">
       <div class="row justify-content-center">
         <div class="card border-0 p-0 col-lg-5">
           <div class="card-body border-start border-end p-0">
             <!-- TABS NAV -->
-            <ul class="nav nav-tabs bg-dark pt-3 ps-3 " id="od_primary_tabs" role="tablist">
+            <ul class="nav nav-tabs bg-dark pt-3 justify-content-center" id="od_primary_tabs" role="tablist">
               <li class="nav-item">
-                <button class="nav-link active ps-4 pe-4 rounded-0 border-0 bg-light text-dark" id="od_tab_01" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">TAB 1</button>
+               <button class="nav-link active ps-4 pe-4 rounded-0 border-0 bg-light text-dark" id="od_tab_01" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-house-door"></i>TAB 1</button>
               </li>
               <li class="nav-item ms-2">
-                <button class="nav-link ps-4 pe-4 rounded-0 border-0 bg-light text-dark" id="od_tab_02" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">TAB 2</button>
+                <button class="nav-link ps-4 pe-4 rounded-0 border-0 bg-light text-dark" id="od_tab_02" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="bi bi-person"></i>TAB 2</button>
               </li>
               <li class="nav-item ms-2">
-                <button class="nav-link ps-4 pe-4 rounded-0 border-0 bg-light text-dark" id="od_tab_03" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">TAB 3</button>
+                <button class="nav-link ps-4 pe-4 rounded-0 border-0 bg-light text-dark" id="od_tab_03" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="bi bi-cup-hot"></i>
+                TAB 3</button>
               </li>
               <li class="nav-item ms-2">
-                <button class="nav-link disabled ps-4 pe-4 rounded-0 text-white bg-secondary" type="button" tabindex="-1" aria-disabled="true">Disabled</button>
+                <button class="nav-link disabled ps-4 pe-4 rounded-0 text-white bg-secondary" type="button" tabindex="-1" aria-disabled="true"><i class="bi bi-ban"></i> Disabled</button>
               </li>
             </ul>
           </div>
-          
             <!-- TABS CONTENT -->
             <div class="tab-content border-end border-start" id="od_my_tabs_content">
               <!-- TABS 01 -->
@@ -46,9 +46,9 @@
                     <div class="col-md-6 pe-0">
                       <!-- Vertical nav-pills -->
                       <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link pb-4 pt-4 border-top text-start active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">An item</button>
-                        <button class="nav-link pb-4 pt-4 border-top text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">A second item</button>
-                        <button class="nav-link pb-4 pt-4 border-top text-start" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">A third item</button>
+                        <button class="nav-link pb-4 pt-4 border-top text-start active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="bi bi-arrow-right"></i> An item</button>
+                        <button class="nav-link pb-4 pt-4 border-top text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="bi bi-arrow-right"></i> A second item</button>
+                        <button class="nav-link pb-4 pt-4 border-top text-start" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-arrow-right"></i> A third item</button>
                       </div>
                     </div>
                     <div class="col-md-6 ps-0">
@@ -90,8 +90,8 @@
                 </div>
               </div>
               <!-- FOOTER -->
-              <div class="card-footer text-white bg-dark rounded-0 pb-3 pt-3">
-                2 days ago
+              <div class="card-footer text-white bg-dark rounded-0 pb-3 pt-3 text-end">
+                <small>2 days ago</small>
               </div>
             </div>
           </div>
