@@ -9,12 +9,15 @@
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
+
+
+$font-family-base: "Open Sans", sans-serif;  
+$headings-font-family:  "Lato", sans-serif;
+
+$link-color: #714b67; 
+$link-hover-color: #fbb130; 
+
 $border-radius: 3rem;
-
-$link-color: #007bff; // Couleur de base des liens
-$link-hover-color: #eff30a; // Couleur des liens au survol
-
-
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -33,34 +36,38 @@ $link-hover-color: #eff30a; // Couleur des liens au survol
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
-#od_primary_tabs {
 
+#od_primary_tabs {
   .active {
     background-color: transparent;
     border-color: var(--bs-light-border-subtle);
   }
+
   .disabled {
     cursor: not-allowed; //Not working ? 
   }
+
   .nav-link {
-    transition: background-color 0.3s ease, transform 0.3s ease;
     padding: 0.5rem 2rem;
     color: var(--bs-white);
 
   }
-
-}
-.nav-item:hover {
-  background-color: var(--bs-focus-ring-opacity);
+  .nav-tabs .nav-link {
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
-
+}
 
 #od_my_tabs_content {
-  min-height: 500px;
+  min-height:400px;
 }
-/* Effet hover sur les nav-tabs button */
+
+/* Hover vertical tabs */
 #v-pills-tab {
+  .nav-link {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
   .nav-link:hover {
     color: var(--bs-nav-tabs-link-hover-color);
     transform: translateX(5px);
@@ -71,4 +78,8 @@ $link-hover-color: #eff30a; // Couleur des liens au survol
     color: var(--bs-nav-tabs-link-active-color);
     transform: translateX(5px);
   }
+}
+.spinner-border {
+  --bs-spinner-width: 5rem;
+  --bs-spinner-height: 5rem;
 }
