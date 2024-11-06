@@ -88,11 +88,11 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #0d6efd;
-  --bs-link-color-rgb: 13, 110, 253;
+  --bs-link-color: #007bff;
+  --bs-link-color-rgb: 0, 123, 255;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #0a58ca;
-  --bs-link-hover-color-rgb: 10, 88, 202;
+  --bs-link-hover-color: #eff30a;
+  --bs-link-hover-color-rgb: 239, 243, 10;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
@@ -100,7 +100,7 @@
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --bs-border-radius: 0.375rem;
+  --bs-border-radius: 3rem;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
   --bs-border-radius-xl: 1rem;
@@ -7021,32 +7021,25 @@ progress {
     display: none !important;
   }
 }
-:root {
-  --bs-card-bg: #ffffff;
-  --bs-card-border-color: #dee2e6;
-  --bs-nav-tabs-border-width: 0px;
-  --bs-nav-link-hover-bg: #e9ecef;
-  --bs-nav-tabs-link-hover-color: #212529;
-  --bs-nav-tabs-link-active-color: #fff;
-  --bs-nav-tabs-link-active-bg: #fd0d7d;
-  --bs-card-footer-bg: #343a40;
-  --bs-card-footer-color: #ffffff;
+#od_primary_tabs .active {
+  background-color: transparent;
+  border-color: var(--bs-light-border-subtle);
 }
-
-body {
-  font-family: robot;
+#od_primary_tabs .disabled {
+  cursor: not-allowed;
 }
-
-.card-body {
-  border-radius: 30px;
-}
-
-.nav-item {
-  background-color: var(--bs-card-border-color);
-}
-
-.nav-link {
+#od_primary_tabs .nav-link {
   transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 2rem;
+  color: var(--bs-white);
+}
+
+.nav-item:hover {
+  background-color: var(--bs-focus-ring-opacity);
+}
+
+#od_my_tabs_content {
+  min-height: 500px;
 }
 
 /* Effet hover sur les nav-tabs button */
